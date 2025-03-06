@@ -1,0 +1,45 @@
+.about {
+    padding: 100px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-img {
+    width: 250px;
+    height: 240px;
+    margin-right: 50px;
+    border-radius: 25px;
+}
+
+.about-text h3 {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-text p {
+    color: black;
+    line-height: 1.5;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .about-text {
+        text-align: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content #about-img {
+        margin-right: 0;
+        margin-bottom: 45px;
+    }
+}
