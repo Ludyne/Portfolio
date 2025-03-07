@@ -1,5 +1,5 @@
-import { MdOpenInNew } from "react-icons/md";
 import { CardsData } from "../../data/projects";
+
 import Card from "./Card";
 
 export default function Projects() {
@@ -9,9 +9,8 @@ export default function Projects() {
         Projets
       </h3>
       <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {CardsData.map((card) => (
-          <Card key={card.id} card={card} />
-        ))}
+        {CardsData &&
+          CardsData.map((card) => <Card key={card.id} card={card} />)}
       </div>
     </section>
   );

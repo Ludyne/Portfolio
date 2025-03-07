@@ -6,7 +6,9 @@ const Home = () => {
       <div className="container">
         <div className="content">
           <div className="hero-text">
-            En recherche d&apos;alternance concepteur d&apos;application web.
+            <h1>
+              En recherche d&apos;alternance concepteur d&apos;application web.
+            </h1>
             <p className="text-2xl text-slate-500">
               Hello 👋🏻 ! Moi c&apos;est Ludivine et je suis une développeuse
               fullstack basée dans la région{" "}

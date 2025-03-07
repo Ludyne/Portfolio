@@ -1,14 +1,10 @@
 import { MdOpenInNew } from "react-icons/md";
 import { IoLogoGithub } from "react-icons/io";
+
 function Card({ card }) {
   return (
-    <div className="block max-w-[18rem] rounded-lg bg-white border border-x-slate-300 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white hover:scale-110 transition-transform duration-300 ease-in-out">
-      <img
-        src={card.img}
-        alt={card.title}
-        className="w-full h-40 object-cover rounded-t-lg p-2"
-      />
-      <div className="p-4">
+    <div className="rounded-lg bg-white border border-x-slate-300 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white hover:scale-110 transition-transform duration-300 ease-in-out flex flex-col">
+      <div className="p-4 flex flex-col flex-grow">
         <h4 className="text-lg font-semibold text-black">{card.title}</h4>
         <p className="text-sm text-black">{card.desc}</p>
         <div className="flex flex-wrap gap-2 mt-2">
